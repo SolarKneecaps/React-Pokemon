@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-Pokemon/static/css/main.e79dcdfb.chunk.css",
+    "main.js": "/React-Pokemon/static/js/main.c319a107.chunk.js",
+    "main.js.map": "/React-Pokemon/static/js/main.c319a107.chunk.js.map",
+    "runtime-main.js": "/React-Pokemon/static/js/runtime-main.1d01fd99.js",
+    "runtime-main.js.map": "/React-Pokemon/static/js/runtime-main.1d01fd99.js.map",
+    "static/js/2.f72e8db5.chunk.js": "/React-Pokemon/static/js/2.f72e8db5.chunk.js",
+    "static/js/2.f72e8db5.chunk.js.map": "/React-Pokemon/static/js/2.f72e8db5.chunk.js.map",
+    "index.html": "/React-Pokemon/index.html",
+    "precache-manifest.1a0785b9c5bc289a5e35c32bc648cdbb.js": "/React-Pokemon/precache-manifest.1a0785b9c5bc289a5e35c32bc648cdbb.js",
+    "service-worker.js": "/React-Pokemon/service-worker.js",
+    "static/css/main.e79dcdfb.chunk.css.map": "/React-Pokemon/static/css/main.e79dcdfb.chunk.css.map",
+    "static/js/2.f72e8db5.chunk.js.LICENSE.txt": "/React-Pokemon/static/js/2.f72e8db5.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/React-Pokemon/static/media/gamebackgroundOneFighting.07204c80.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d01fd99.js",
+    "static/js/2.f72e8db5.chunk.js",
+    "static/css/main.e79dcdfb.chunk.css",
+    "static/js/main.c319a107.chunk.js"
+  ]
+}
