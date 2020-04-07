@@ -1,0 +1,97 @@
+@import './variables';
+@import './mixins';
+
+
+.catching--container{
+    width: 100vw;
+    height: 100vh;
+    max-width: 600px;
+    padding: 1em;
+    @include Flex(column);
+    min-height: 650px;
+    &__wrapper{
+        margin: 1em;
+        align-self: flex-end;
+        height: 150px;
+        @include Flex(row);
+        justify-content: flex-start;
+        align-items: flex-start;
+        &__name{
+            position: relative;
+            font-size: 1.3rem;
+            color: $blackColor;
+            background: $greyColor;
+            padding: 0.35em 1.5em;
+            margin-top: 0.25em;
+            border: 0.15em solid $blackColor;
+            text-align: center;
+            border-radius: 10px;
+            width: 165px;
+            overflow: visible;
+            &::before{
+                content: '';
+                background: $blackColor;
+                width: 165px;
+                height: 30px;
+                position: absolute;
+                bottom: -12px;
+                right: -30px;
+                clip-path: polygon(100% 100%, 73% 61%, 0% 61%, 3% 81%, 13% 94%, 23% 100%);
+            }
+        }
+        &__img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    &__trainer{
+        align-self: flex-start;
+        margin: 0.25em 0em 1em 1em;
+        width: 150px;
+        height: 150px;
+    }
+
+    &__btn--wrapper{
+        align-self: center;
+        @include Flex-Center(row);
+        width: 95vw;
+        max-width: 600px;
+        justify-content: space-evenly;
+        margin-bottom: 0.25em;
+        &__btns{
+            font-family: $bodyFont;
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 0.25em 1em;
+            background: $greyColor;
+            color: $blackColor;
+            border: none;
+            box-shadow: 0px 0px 10px $blackColor;
+            transition: 250ms background ease-in;
+            &:hover,
+            &:focus{
+                background: darken($greyColor, 15);
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__team--wrapper{
+        width: 100vw;
+        max-width: 400px;
+        text-align: center;
+        align-self: center;
+        &__imgs{
+            margin: -1em;
+            width: 150px;
+            height: auto;
+        }
+    }
+}
+
+
+@media (max-height: 650px){
+    .catching--container__team--wrapper{
+        display: none;
+   }
+}

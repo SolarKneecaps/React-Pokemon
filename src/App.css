@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  min-width: 500px;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.start--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 3em 0em;
+}
+
+.start--container__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 0, 0, 0.4);
+  width: 100vw;
+  margin-bottom: 2em;
+}
+
+.start--container__wrapper__heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  text-shadow: 0px 0px 15px black;
+}
+
+.start--container__wrapper__text {
+  font-family: "Roboto", sans-serif;
+  max-width: 55ch;
+  font-size: 1.2rem;
+  text-align: justify;
+  text-shadow: 0px 0px 15px black;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.start--container__btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.75em 3em;
+  border-radius: 10px;
+  background: red;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+  -webkit-transition: 250ms background ease-in;
+  transition: 250ms background ease-in;
+}
+
+.start--container__btn:hover, .start--container__btn:focus {
+  background: #b30000;
+  cursor: pointer;
+}
+
+.catching--container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 600px;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 650px;
+}
+
+.catching--container__wrapper {
+  margin: 1em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.catching--container__wrapper__name {
+  position: relative;
+  font-size: 1.3rem;
+  color: black;
+  background: lightgrey;
+  padding: 0.35em 1.5em;
+  margin-top: 0.25em;
+  border: 0.15em solid black;
+  text-align: center;
+  border-radius: 10px;
+  width: 165px;
+  overflow: visible;
+}
+
+.catching--container__wrapper__name::before {
+  content: '';
+  background: black;
+  width: 165px;
+  height: 30px;
+  position: absolute;
+  bottom: -12px;
+  right: -30px;
+  -webkit-clip-path: polygon(100% 100%, 73% 61%, 0% 61%, 3% 81%, 13% 94%, 23% 100%);
+          clip-path: polygon(100% 100%, 73% 61%, 0% 61%, 3% 81%, 13% 94%, 23% 100%);
+}
+
+.catching--container__wrapper__img {
+  width: 150px;
+  height: 150px;
+}
+
+.catching--container__trainer {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0.25em 0em 1em 1em;
+  width: 150px;
+  height: 150px;
+}
+
+.catching--container__btn--wrapper {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95vw;
+  max-width: 600px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 0.25em;
+}
+
+.catching--container__btn--wrapper__btns {
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.25em 1em;
+  background: lightgrey;
+  color: black;
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  -webkit-transition: 250ms background ease-in;
+  transition: 250ms background ease-in;
+}
+
+.catching--container__btn--wrapper__btns:hover, .catching--container__btn--wrapper__btns:focus {
+  background: #adadad;
+  cursor: pointer;
+}
+
+.catching--container__team--wrapper {
+  width: 100vw;
+  max-width: 400px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.catching--container__team--wrapper__imgs {
+  margin: -1em;
+  width: 150px;
+  height: auto;
+}
+
+@media (max-height: 650px) {
+  .catching--container__team--wrapper {
+    display: none;
+  }
+}
+
+.view--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view--container__trainer {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1em;
+  margin-top: -1em;
+}
+
+.view--container__wrapper {
+  width: 95vw;
+  max-width: 600px;
+  text-align: center;
+}
+
+.view--container__wrapper__img {
+  margin: -0.5em;
+  width: 175px;
+}
+
+.view--container__btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.75em 3em;
+  border-radius: 10px;
+  background: red;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+  -webkit-transition: 250ms background ease-in;
+  transition: 250ms background ease-in;
+}
+
+.view--container__btn:hover, .view--container__btn:focus {
+  background: #b30000;
+  cursor: pointer;
+}
+
+.main--container {
+  background-image: url(./imgs/gamebackgroundOneFighting.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,17 @@
+@import './resets';
+@import './variables';
+@import './mixins';
+
+@import './startOfGame';
+@import './catchingGame';
+@import './viewPokemon';
+
+
+
+.main--container{
+    background-image: url(./imgs/gamebackgroundOneFighting.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    @include Flex-Center(column);
+}
